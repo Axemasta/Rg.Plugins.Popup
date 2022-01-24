@@ -123,11 +123,14 @@ namespace Rg.Plugins.Popup.Droid.Impl
 
                     var mainPageRenderer = mainPage.GetOrCreateRenderer();
 
-                    // Workaround for https://github.com/rotorgames/Rg.Plugins.Popup/issues/721
-                    if (!(mainPage is MultiPage<Page>))
-                    {
-                        mainPageRenderer.View.ImportantForAccessibility = ImportantForAccessibility.Auto;
-                    }
+                    // Uncomment For Fix!
+                    //// Workaround for https://github.com/rotorgames/Rg.Plugins.Popup/issues/721
+                    //if (!(mainPage is MultiPage<Page>))
+                    //{
+                    //    mainPageRenderer.View.ImportantForAccessibility = ImportantForAccessibility.Auto;
+                    //}
+
+                    //mainPageRenderer.View.ImportantForAccessibility = ImportantForAccessibility.Auto;
 
                     if (navCount > 0)
                     {

@@ -87,7 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AccessibilityTreeIssue\AccessibilityTreeIssue.csproj">
-      <Project>{996FFFED-5E96-4C2D-954C-BDA463186055}</Project>
+      <Project>{028BAC4A-0A26-4C92-AC44-54B612546483}</Project>
       <Name>AccessibilityTreeIssue</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Rg.Plugins.Popup\Rg.Plugins.Popup.csproj">

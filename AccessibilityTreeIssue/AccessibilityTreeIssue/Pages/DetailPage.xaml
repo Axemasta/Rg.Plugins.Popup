@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AccessibilityTreeIssue.Pages.DetailPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Grid
+                    Margin="30,30,20,15"
+                    ColumnDefinitions="Auto, *,Auto"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="Start">
+                    <Button
+                        x:Name="BackButton"
+                        Grid.Column="0"
+                        Clicked="BackButton_Clicked"
+                        Text="Back" />
+                    <Label
+                        Grid.Column="1"
+                        AutomationProperties.IsInAccessibleTree="True"
+                        FontSize="18"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        LineBreakMode="WordWrap"
+                        Text="Detail Page" />
+                    <Button
+                        x:Name="InfoButton"
+                        Grid.Column="2"
+                        Clicked="InfoButton_Clicked"
+                        Text="Info" />
+                </Grid>
+
+                <Label Text="Hello World I am some content" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
